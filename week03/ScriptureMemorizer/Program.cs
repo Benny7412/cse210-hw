@@ -32,7 +32,7 @@ class Program
             {
                 Console.Clear();
                 Console.WriteLine(scripture.GetDisplayText());
-                Console.WriteLine("\n All words are now hidden.");
+                Console.WriteLine("\nAll words are now hidden.");
         }
     }
 }
