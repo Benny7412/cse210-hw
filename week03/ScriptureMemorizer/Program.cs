@@ -1,4 +1,10 @@
 using System;
+/*Exceeding the requirements*/
+
+//I made the scripture randomly generate from ScriptureLib and you are able to generate a new one by typing 'new'.
+
+
+
 
 class Program
 {
