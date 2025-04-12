@@ -15,14 +15,19 @@ class Video
         _comments = new List<Comment>();
     }
 
-    public string GetFormattedTime()
-    {
+public string GetFormattedTime()
+{
+    int hours = _seconds / 3600;
+    if (hours != 0) {
+        int minutes = (_seconds % 3600) / 60;
+        int seconds = (_seconds % 3600) % 60;
+        return $"{hours}:{minutes:D2}:{seconds:D2}";
+    } else {
         int minutes = _seconds / 60;
         int seconds = _seconds % 60;
-
-        return $"{minutes}:{seconds}";
+        return $"{minutes}:{seconds:D2}";
     }
-
+}
     public string Title 
     {
         get { return _title; }
