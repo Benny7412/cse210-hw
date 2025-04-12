@@ -31,7 +31,7 @@ class Order {
 
         float shippingCost = _customer.IsInUSA() ? 5:35;
 
-        return productTotal += shippingCost;
+        return productTotal + shippingCost;
     }
 
     public void GetPackingLabel() {
